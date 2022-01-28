@@ -1,0 +1,17 @@
+.pricing-tab {
+  box-shadow: 0px 0px 25px -15px #fff;
+}
+.price {
+  box-shadow: 0px 0px 15px -5px rgba(255, 255, 255, 0.164);
+}
+
+.order {
+  box-shadow: 0px 0px 15px -5px #ff014d7e;
+  transition: ease 0.5s;
+  transform: scale(0.9);
+}
+.order:hover {
+  box-shadow: 0px 0px 15px -1px #ff014d;
+  transition: ease 0.5s;
+  transform: scale(1);
+}

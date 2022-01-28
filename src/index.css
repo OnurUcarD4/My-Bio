@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #212428 !important;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}

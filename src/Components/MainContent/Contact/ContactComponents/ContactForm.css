@@ -1,0 +1,17 @@
+.form-input {
+  background-color: #191b1e;
+  outline: none;
+  color: #c4cfde;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: ease 0.3s;
+}
+.form-input:focus {
+  border: #ff014f 2px solid;
+  transition: ease 0.3s;
+}
+textarea {
+  height: 200px;
+  resize: none;
+}

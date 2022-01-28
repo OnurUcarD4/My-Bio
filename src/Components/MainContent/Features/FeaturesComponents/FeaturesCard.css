@@ -1,0 +1,50 @@
+.features-card {
+  position: relative;
+  background: rgb(33, 36, 40);
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: -15px -20px 40px -40px rgba(255, 255, 255, 0.66),
+    0 15px 25px rgba(0, 0, 0, 0.315);
+}
+.features-card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    83deg,
+    rgba(33, 36, 40, 1) 0%,
+    rgba(50, 55, 61, 1) 99%
+  );
+  z-index: -1;
+  transition: all 0.2s linear;
+  opacity: 0;
+  border-radius: 10px;
+}
+.features-card:hover .features-incard {
+  transition: all 0.5s;
+  transform: translateY(-20px);
+}
+.features-card .features-incard .features-incard {
+  transition: all 0.5s;
+  transform: translateY(0);
+}
+.features-incard {
+  transition: ease 0.5s;
+}
+.features-card:hover::before {
+  opacity: 1;
+}
+.chevron-opacity {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.features-card:hover .chevron-opacity {
+  opacity: 1;
+  transition: all 0.5s;
+}
+.feature {
+  scroll-margin-top: 150px;
+}
